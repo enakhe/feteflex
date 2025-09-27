@@ -21,20 +21,20 @@ const FAQs = () => {
 
                     <div className="hidden lg:block">
                         <Tabs orientation="vertical" value={activeTab}>
-                            <div className='flex items-center'>
+                            <div className='grid grid-cols-2 gap-4 items-center'>
                                 <TabsHeader
                                     fullwidth={"true"}
-                                    className="rounded-none text-start text-[#F1EEF7] text-sm bg-transparent p-0 mr-5"
+                                    className="rounded-none text-start text-[#F1EEF7] text-sm bg-transparent p-0"
                                     indicatorProps={{
                                         className:
-                                            "!text-inherit font-family text-start text-sm w-96 capitalize bg-[#2A2346] text-[#F1EEF7]",
+                                            "!text-inherit font-family text-start text-sm capitalize bg-[#2A2346] text-[#F1EEF7]",
                                     }}>
                                     {data.map(({ label, value }) => (
                                         <Tab
                                             key={value}
                                             value={value}
                                             onClick={() => setActiveTab(value)}
-                                            className={activeTab === value ? "justify-start text-left text-[#F1EEF7] text-sm w-96 py-4 px-4" : "justify-start text-left text-sm my-3 bg-[#e7e4ee] py-4 px-4 rounded"}>
+                                            className={activeTab === value ? "justify-start text-left text-[#F1EEF7] text-sm py-4 px-4" : "justify-start text-left text-sm my-3 bg-[#e7e4ee] py-4 px-4 rounded"}>
                                             {label}
                                         </Tab>
                                     ))}
@@ -51,7 +51,6 @@ const FAQs = () => {
 
                                 </TabsBody>
                             </div>
-
                         </Tabs>
                     </div>
 

@@ -5,6 +5,7 @@
 	"author": "Izuagbe Samuel",
 	"private": true,
 	"dependencies": {
+		"backend": "file:",
 		"bcryptjs": "^2.4.3",
 		"colors": "^1.4.0",
 		"cors": "^2.8.5",
@@ -20,7 +21,7 @@
 		"nodemon": "^2.0.22"
 	},
 	"scripts": {
-		"start": "node backend/server.js",
+		"start": "node server.js",
 		"server": "nodemon backend/server.js",
 		"client": "npm run dev --prefix ../frontend",
 		"dev": "concurrently \"npm run server\" \"npm run client\""

@@ -6,7 +6,7 @@ const SelectMenus = ({ placeholder, value, onChange, error, name }) => {
 
     return (
         <>
-            <select id={name} name={name} value={value} onChange={onChange} className="mt-2 block w-full rounded-md border-2 border-white py-3 pl-5 pr-10 placeholder:text-gray-400 text-gray-600 sm:text-sm sm:leading-6 focus:ring-0 focus:outline-none bg-transparent">
+            <select id={name} name={name} value={value} onChange={onChange} className="mt-2 block w-full bg-[#e7e4ee] rounded-md py-3 pl-5 pr-10 placeholder:text-[#2A2346] text-gray-950 sm:text-sm sm:leading-6 focus:ring-0 focus:outline-none">
                 {
                     people.map((ppl, index) => (
                         <option className='text-dark' key={index} value={ppl.name}>{ppl.name}</option>

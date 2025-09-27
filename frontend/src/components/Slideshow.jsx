@@ -12,7 +12,9 @@ const Slideshow = () => {
         <Fragment>
             <h3 className='text-[#2A2346] text-3xl text-center max-w-3xl lg:max-w-7xl pt-10 mx-auto font-bold px-4 lg:px-0'>Tell Us What You Are Planning</h3>
             <div className='flex justify-center'>
-                <p className='lg:max-w-xl text-center text-[#2A2346] text-md p-6 text-lg leading-relaxed'>Whether you&apos;re organizing a wedding, concert, birthday party, corporate event, or beach party, our platform has everything you need to ensure seamless experiences for you.</p>
+                <p className='lg:max-w-xl text-center text-[#2A2346] text-md p-6 text-lg leading-relaxed'>
+                    Whether you&apos;re organizing a wedding, concert, birthday party, corporate event, or beach party, our platform has everything you need to ensure seamless experiences for you.
+                </p>
             </div>
 
             <div className='lg:pl-20 pl-5 padding-utils mt-10 no-scrollbar scroll-smooth overflow-x-auto overflow-visible'>

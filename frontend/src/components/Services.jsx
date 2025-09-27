@@ -4,6 +4,8 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import iphone1 from '../assets/iPhone 13.png'
 import iphone2 from '../assets/iPhone 13-2.png'
 import iphone3 from '../assets/iPhone 13-3.png'
+import { Dialog } from '@material-tailwind/react'
+import WaitList from './WaitList'
 
 
 const Services = () => {
@@ -14,12 +16,12 @@ const Services = () => {
         <Fragment>
             <div className="bg-[#F8F8F8]">
                 <div className='mx-auto lg:max-w-7xl lg:pt-10 p-6 padding-utils'>
-                    <h3 className='text-[#2A2346] text-3xl pt-10 font-bold'>Are You Planning an Event or Offering Event Services</h3>
+                    <h3 className='text-[#2A2346] text-3xl mb-5 pt-10 font-bold'>Are You Planning an Event or Offering Event Services</h3>
                     <div className='flex justify-center'>
                         <div className="">
                             <ScrollAnimation duration={1} animateIn="fadeInUp" animateOnce={true}>
 
-                                <div className='grid gap-5 sm:grid-cols-1 items-center p-6 lg:px-0 lg:grid-cols-2'>
+                                <div className='grid gap-5 sm:grid-cols-1 items-center lg:px-0 lg:grid-cols-2'>
                                     <div className='bg-[#ffffff] rounded-2xl'>
                                         <h3 className='text-2xl text-[#2A2346] font-bold pt-6 px-6'>Feteflex For Your Events</h3>
                                         <div className='grid gap-5 sm:grid-cols-1 items-center lg:grid-cols-2'>
@@ -41,7 +43,7 @@ const Services = () => {
                                     </div>
                                 </div>
 
-                                <div className='bg-[#ffffff] w-full rounded-2xl col-start-1 col-end-6'>
+                                <div className='bg-[#ffffff] w-full rounded-2xl mt-10 col-start-1 col-end-6'>
                                     <div className='grid gap-5 sm:grid-cols-1 items-end lg:grid-cols-3'>
                                         <div className='lg:col-span-2 my-5 px-6'>
                                             <h3 className='text-2xl text-[#2A2346] font-bold'>From Intimate Gatherings to Grand Celebrations</h3>
@@ -61,6 +63,14 @@ const Services = () => {
                     </div>
                 </div>
             </div>
+            <Dialog
+                size="xs"
+                open={open}
+                onClose={open}
+                handler={handleOpen}
+                className="bg-transparent shadow-none">
+                <WaitList onClick={handleOpen} />
+            </Dialog>
         </Fragment>
     )
 }

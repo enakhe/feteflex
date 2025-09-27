@@ -9,7 +9,7 @@ const GlassInputNoButton = ({ placeholder, value, onChange, error, type, name })
                     name={name}
                     id={name}
                     value={value}
-                    className="block w-full rounded-md border-2 border-white py-3 pl-5 pr-10 placeholder:text-[#2A2346] text-gray-950 sm:text-sm sm:leading-6 focus:ring-0 focus:outline-none bg-transparent"
+                    className="block w-full bg-[#e7e4ee] rounded-md py-3 pl-5 pr-10 placeholder:text-[#2A2346] text-gray-950 sm:text-sm sm:leading-6 focus:ring-0 focus:outline-none"
                     placeholder={placeholder}
                     onChange={onChange}
                 />

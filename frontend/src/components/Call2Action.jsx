@@ -1,10 +1,11 @@
 import { Fragment, useState } from 'react'
 import GlassInput from './GlassInput'
 import AvatarStack from './AvatarStack'
-import { Button } from '@material-tailwind/react'
+import { Button, Dialog } from '@material-tailwind/react'
 
 import landingImage from './../assets/landing.png'
 import curve from './../assets/curve.png'
+import WaitList from './WaitList'
 
 const Call2Action = () => {
     const [open, setOpen] = useState(false);
@@ -18,7 +19,7 @@ const Call2Action = () => {
                         <div className="grid lg:justify-items-center mt-6">
                             <div className='px-6 lg:px-0'>
                                 <h1 className="lg:text-4xl mt-5 text-align text-[#2A2346] tracking-tight text-4xl font-semibold animate-once animate-delay-300 animate__animated animate__zoomIn heading-text">
-                                    Transforming <span className='text-[#8663A6]'>event planing</span> with
+                                    Transforming <span className='text-[#8663A6]'>event planning</span> with
                                     technology and innovation
                                 </h1>
                                 <img alt='curve' src={curve} className='w-48 absolute bottom-30 animate-once animate-delay-300 animate__animated animate__zoomIn' />
@@ -45,6 +46,15 @@ const Call2Action = () => {
                     </div>
                 </div>
             </div>
+
+            <Dialog
+                size="xs"
+                open={open}
+                onClose={open}
+                handler={handleOpen}
+                className="bg-transparent shadow-none">
+                <WaitList onClick={handleOpen} />
+            </Dialog>
         </Fragment>
     )
 }

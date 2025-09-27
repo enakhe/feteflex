@@ -9,10 +9,11 @@ import OurMission from './OurMission'
 import Features from './Features'
 import Slideshow from './Slideshow'
 import Features2Card from './Features2Card'
-import Video from './Video'
+// import Video from './Video'
 
 import 'animate.css';
 import FAQs from './FAQs'
+import Services from './Services'
 
 const Body = () => {
     const [open, setOpen] = useState(false);
@@ -23,6 +24,7 @@ const Body = () => {
             <Call2Action />
             <OurMission />
             <Features />
+            <Services />
 
             <Fragment>
                 <div className="bg-gradient">
@@ -30,7 +32,7 @@ const Body = () => {
 
                     <div className='mx-auto lg:max-w-7xl p-6 pt-20'>
                         <Features2Card />
-                        <Video />
+                        {/* <Video /> */}
                     </div>
                 </div>
             </Fragment>
